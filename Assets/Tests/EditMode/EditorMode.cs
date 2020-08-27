@@ -10,8 +10,19 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void EditorModeSimplePasses()
+        public void CanBeCancelledBy_UserIsAdmin_ReturnsTrue()
         {
+            //Arrange
+            var reservation = new Reservation();
+
+            //Act
+
+            var result = reservation.CanBeCancellledBy(new User { IsAdmin = true });
+
+            //Assert
+
+
+            Assert.IsTrue(result);
             // Use the Assert class to test conditions
         }
 

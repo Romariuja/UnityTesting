@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Reservation : MonoBehaviour
+public class Reservation
+
 {
-  
     public User MadeBy { get; set; }
     public bool CanBeCancellledBy(User user)
     {

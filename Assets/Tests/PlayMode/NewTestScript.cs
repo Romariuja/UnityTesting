@@ -17,7 +17,7 @@ namespace Tests
 
             //Act
 
-            var result = reservation.CanBeCancellledBy(new User { IsAdmin = true });
+            var result = reservation.CanBeCancellledBy(new User { IsAdmin = false });
 
             //Assert
 
